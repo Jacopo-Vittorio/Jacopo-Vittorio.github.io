@@ -1,0 +1,199 @@
+/* Generali Index CSS*/
+html::-webkit-scrollbar {
+	display: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #222222;
+	width: 100%;
+	color: #E6E8E6;
+	font-family: verdana;
+}
+
+/*Preloading Screen CSS*/
+#box_loader {
+	background-color: #222222;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 2;
+}
+.loader {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.loader .line {
+	border-radius: 50%;
+	border-left: 4px solid;
+	border-right: 4px solid;
+	border-top: 4px solid transparent !important;
+	border-bottom: 4px solid transparent !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: ro 2s infinite;
+}
+.loader .line1 {
+	border-color: #3772FF;
+	width: 120px;
+	height: 120px;
+	animation-delay: 0.2s;
+}
+.loader .line2 {
+	border-color: #DF2935;
+	width: 100px;
+	height: 100px;
+	animation-delay: 0.4s;
+}
+.loader .line3 {
+	border-color: #FDCA40;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0.6s;
+}
+@keyframes ro {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	50% {
+		transform: translate(-50%, -50%) rotate(-180deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+}
+
+/*Social Menu*/
+div.social_menu a i {
+	color: #E6E8E6;
+	font-size: 60px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	transition: 0.4s;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+div.social_menu a i:hover {
+	color: #3772FF;
+	transition: 0.4s;
+}
+
+/*Title CSS*/
+div.box_title {
+	height: 200px;
+}
+h1.title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: min(10vw, 170px);
+	text-transform: uppercase;
+}
+h1.title:before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #3772FF;
+	width: 0%;
+	overflow: hidden;
+	transition: 1s;
+}
+h1:hover:before {
+	width: 100%;
+}
+
+/*SubTitle & Content CSS*/
+h2.sub_title {
+	text-align: center;
+}
+h2.sub_title:first-letter {
+	color: #3772FF;
+}
+p.content {
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+lottie-player {
+	width: 85%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+ol {
+	counter-reset: li; /* Initiate a counter */
+	list-style: none; /* Remove default numbering */
+	*list-style: decimal; /* Keep using default numbering for IE6/7 */
+	font: 15px 'trebuchet MS', 'lucida sans';
+	padding: 0;
+	margin-bottom: 4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	width: 70%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	max-width: 800px;
+}
+ol ol {
+	margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+.rounded-list a {
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 2em;
+	*padding: .4em;
+	margin: .5em 0;
+	background: #ddd;
+	color: #444;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: all .3s ease-out;
+	pointer-events: none;
+	cursor: default;
+}
+.rounded-list a:hover {
+	background: #E6E8E6;
+}
+.rounded-list a:hover:before {
+	transform: rotate(360deg);
+}
+.rounded-list a:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #FDCA40;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid #fff;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .3s ease-out;
+}
+
+/*ProgressBar CSS*/
+#progress {
+	background: #FDCA40;
+	height: 15px;
+	position: fixed;
+	bottom: 0;
+}

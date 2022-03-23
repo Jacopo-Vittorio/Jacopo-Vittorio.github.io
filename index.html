@@ -1,79 +1,73 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="index.css">
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	</head>
+	
+	<body>
+		<!-- HTML + JS for the Preloading Screen -->
+		<div id="box_loader">
+			<div class="loader">
+      			<div class="line line1"></div>
+      			<div class="line line2"></div>
+      			<div class="line line3"></div>
+    		</div>
+		</div>
+		<script>
+			$("#box_loader").fadeIn('slow').delay(3500).fadeOut('slow');
+		</script>
+		
+		<!-- HTML Title -->
+		<h1 data-text="BITunimore" class="title">BITunimore</h1>
+		<div class="box_title"></div>
+		
+		<div class="social_menu">
+          	<a href="https://t.me/+uEe88v9_QihkZmVk"><i class="fab fa-telegram"></i></a>
+        </div>
+		
+		<!-- HTML Content -->
+		<h2 class="sub_title"> Cos'è BITunimore? </h2>
+		<p class="content">
+			BITunimore ha lo scopo di avvicinare gli studenti alle tematiche cryptovalute e blockchain, sia accademicamente sia con uno sguardo al futuro lavorativo degli stessi.			
+			<br>Vogliamo indagare, sviluppare, e realizzare progetti e temi blockchain, rivolti a studenti di tutti i corsi di laurea unimore, tenendo conto delle conoscenze che gli studenti
+			di diversi corsi possono avere e mettere a disposizione. 
+			<br>Vogliamo sviluppare competenze trasversali tra discipline offrendo nozioni di teoria e attività in cui mettere alla prova le proprie abilità.
+	
+			<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_8wuout7s.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+		</p>
+		
+		<h2 class="sub_title"> Quali sono gli obiettivi di BITunimore? </h2>	
+		<ol class="rounded-list">
+    		<li><a href="">Creazione di un indice di risorse accademiche (e non)</a></li>
+    		<li><a href="">creazione e mantenimento di un nodo lightening Bitcoin</a></li>
+    		<li><a href="">analisi stato dell’arte dell’ecosistema blockchain</a></li>
+  		</ol>
+		<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_yc9ywdm7.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+		
+		<h2 class="sub_title"> A chi ci rivolgiamo ? </h2>
+		<p class="content">
+			BITunimore è aperta a tutti gli studenti, con ogni tipo di background accademico.
+			<br>Indipendentemente dalle conoscenze pregresse ognuno è libero di unirsi, che lo studente sia un esperto programmatore di smart contract o un completo newbie, un analista finanziario
+			alla warren buffet o un completo neofita, o semplicemente curioso verso le nuove tecnologie è il benvenuto.
+			<br>Insieme ai suoi colleghi potrà mettersi alla prova e cimentarsi nei progetti 
+			che verranno proposti.
+		</p>
+		<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_qsoc3fru.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+		
+		<!-- HTML ProgressBar -->
+		<div id="progress"></div>
+		<script type="text/javascript">
+    		$(window).scroll(function(){
+      			var scroll = $(window).scrollTop(),
+          		dh = $(document).height(),
+          		wh = $(window).height();
+          		value = (scroll/(dh-wh))*100;
 
-<body>
-  <h1> BITunimore </h1>
-</body>
-<style>
-.presentazione{
-  background-color: rgb(245, 136, 3); 
-  color: white; 
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
-}
-</style>
-<h2>
-  Chi siamo:
-</h2>
-  <p class = "presentazione">
-  BITmore ha lo scopo di avvicinare gli studenti alle 
-  tematiche cryptovalute e blockchain, sia accademicamente sia con uno sguardo al futuro 
-  lavorativo degli stessi.
-</p>
-
-<h2>
-  Il nostro progetto
-</h2>
-<p>
-  Vogliamo indagare,sviluppare, e realizzare progetti e temi blockchain, rivolti a studenti di 
-  tutti i corsi di laurea unimore, tenendo conto delle conoscenze che gli studenti di diversi 
-  corsi possono avere e mettere a disposizione. 
-  Vogliamo sviluppare competenze trasversali tra discipline offrendo nozioni di teoria e 
-  attività in cui mettere alla prova le proprie abilità. 
-  </p>
-  <ul>
-   
-      <li>creazione di un indice di risorse accademiche (e non)</li>
-   
-       
-      <li>creazione e mantenimento di un nodo lightning Bitcoin</li>
-
-    
-    <li>analisi stato dell’arte dell’ecosistema blockchain</li> 
-    
-  </ul>
-<h2>
-  A chi ci rivolgiamo ?
-</h2>
-<div style="background-color:blue;color:rgb(243, 243, 2);padding:20px;margin: 20px;">
-  <p>
-    BITmore è aperta a tutti gli studenti, con ogni tipo di background accademico.
-    Indipendentemente dalle conoscenze pregresse ognuno è libero di unirsi, che lo studente sia 
-    un esperto programmatore di smart contract o un completo newbie, un analista finanziario 
-    alla warren buffet o un completo neofita, o semplicemente curioso verso le nuove tecnologie  
-    è il benvenuto; insieme ai suoi colleghi potrà mettersi alla prova e cimentarsi nei progetti 
-    che verranno proposti. 
-    </p>
-  
-</div>
-
-<footer>
-  <div  style="background-color:black;color:white;padding:20px;margin: 20px;">
-    <h3>
-      Link utili
-      <ul>
-        <li>
-          <a href="https://t.me/+uEe88v9_QihkZmVk">
-            Telegram
-          </a>
-        </li>
-        <li>
-          Mail: 
-        </li>
-      </ul>
-    </h3>
-  </div>
-</footer>
-
-
+          		$("#progress").css("width", value+"%");
+    		});
+  		</script>
+	</body>
 </html>
