@@ -74,14 +74,35 @@ body {
 div.social_menu a i {
 	color: #E6E8E6;
 	font-size: 60px;
-	padding-top: 50px;
-	padding-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 	transition: 0.4s;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
 }
 div.social_menu a i:hover {
+	color: #3772FF;
+	transition: 0.4s;
+}
+
+/*Email Menu*/
+.email_menu {
+	text-align: center;
+}
+.fa-envelope {
+	font-size: 40px;
+	display: inline;
+}
+.email_menu p {
+	display: inline;
+}
+.email_menu .email {
+	transition: 0.4s;
+}
+.email_menu .email:hover {
 	color: #3772FF;
 	transition: 0.4s;
 }
@@ -133,15 +154,17 @@ lottie-player {
 	transform: translate(-50%);
 	margin-top: 50px;
 	margin-bottom: 50px;
+	max-width: 1200px
 }
 
+/*List CSS*/
 ol {
 	counter-reset: li; /* Initiate a counter */
 	list-style: none; /* Remove default numbering */
 	*list-style: decimal; /* Keep using default numbering for IE6/7 */
-	font: 15px 'trebuchet MS', 'lucida sans';
+	font: 22px 'trebuchet MS', 'lucida sans';
 	padding: 0;
-	margin-bottom: 4em;
+	margin-bottom: 0;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 	width: 70%;
 	position: relative;
